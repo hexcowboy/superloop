@@ -11,14 +11,16 @@ oled_rotation_t oled_init_user(oled_rotation_t rotation) {
 }
 
 void render_animation(void) {
-    uint8_t current_frame = (timer_read() / 100) % 8;
+    uint8_t current_frame = (timer_read() / 50) % 8;
     oled_write_raw_P(animation[current_frame], sizeof(animation[current_frame]));
 }
 
 void oled_task_user(void) {
     if (is_master) {
+        // Right side (master shield)
         render_animation();
     } else {
+        // Left side (worker shield)
         render_animation();
     }
 }
