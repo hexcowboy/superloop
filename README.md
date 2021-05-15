@@ -26,8 +26,8 @@ git clone https://github.com/hexcowboy/superloop.git ./keyboards/crkbd/keymaps/s
 Install and flash the firmware:
 ```bash
 # For Pro Micro
-qmk flash -kb crkdb/rev1 -km superloop
+qmk flash -kb crkbd/rev1/legacy -km superloop
 
 # For Elite-C
-qmk flash -kb crkdb/rev1 -km superloop -bl dfu
+qmk flash -kb crkbd/rev1/legacy -km superloop -bl dfu
 ```
