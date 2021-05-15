@@ -7,6 +7,7 @@ This animation is made for 32x128 pixel 1-bit OLED displays.
 This repository is a lightweight clone of the [`crkdb:default`](https://github.com/qmk/qmk_firmware/tree/master/keyboards/crkbd/keymaps/default) QMK configuration. The animation frames exist in `animation.c` and the render function exists in the `oled.c` file.
 
 **Firmware size**: 22220 bytes / 22.22 kilobytes
+<br><sub>*Note: Firmware size can be greatly reduced by adding [`LTO_ENABLE`](https://docs.qmk.fm/#/config_options?id=build-options) to your `rules.mk`*</sub>
 
 ## Installation
 
