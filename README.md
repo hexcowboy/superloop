@@ -15,7 +15,7 @@ Download and install the QMK firmware using [these](https://docs.qmk.fm/#/newbs_
 
 Once you have qmk installed and setup, move into your QMK repo:
 ```bash
-cd $(qmk config | grep user.qmk_home | cut -d "=" -f2)
+cd $(qmk config user.qmk_home | cut -d "=" -f2)
 ```
 
 Clone this repo with the following command:
